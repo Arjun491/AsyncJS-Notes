@@ -39,4 +39,23 @@ output+=`<li>${posts.title}</li>`;
 },1000);
 }
 
+
+function createPosts(newPost)
+{
+    setTimeout(
+        ()=>{
+postsArray.push(newPost);
+        }
+        ,2000);
+}
+
+
+
+createPosts(   {
+    title: "Post Number-3",
+    body:"This is post 3:Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, dicta!"
+
+});
+
+//callings
 getPosts();
