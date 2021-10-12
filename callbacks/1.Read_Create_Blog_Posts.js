@@ -45,6 +45,7 @@ function createPosts(newPost)
     setTimeout(
         ()=>{
 postsArray.push(newPost);
+
         }
         ,2000);
 }
