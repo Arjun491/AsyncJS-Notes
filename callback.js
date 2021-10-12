@@ -56,6 +56,12 @@ createPosts(   {
     body:"This is post 3:Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, dicta!"
 
 });
+// createPosts is set to 2sec and took longer than getPosts() to show new added posts 
 
+// gh issue create --title "createPosts() is slower than getPosts()" --body "server took 1 sec to show posts than DOM already showed with results so createPosts() never got chance to run"
 //callings
 getPosts();
+
+createPosts(); // its slower than getPosts() as soon as it call DOM shows results from getPosts as it will never get chance
+
+// to resolve above issue we use promises.js
